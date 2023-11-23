@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h2{
+    text-align: center;
+}
+
+
+/* flex */
+
+.parentflex{
+    background-color: #aaa;
+    display: flex;
+    width: 600px;
+    margin: 0 auto;
+    padding:10px ;
+    height: 400px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.parentflex .flex{
+    background-color: red;
+    color: white;
+    flex-basis: 100%;
+    width: calc(93% / 8);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/* float */
+
+.parentFloat{
+    background-color: #aaa;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: auto;
+    
+}
+
+.float{
+    float: left;
+    background-color: red;
+    color: white;
+    width: 25%;
+    padding: 10px 0;
+    text-align: center;
+}

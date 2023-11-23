@@ -1,0 +1,161 @@
+/*
+h1{
+    color: white;
+    background-color: orangered;
+    width: 150px;
+    margin: 200px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px ;
+    position: relative;
+    z-index: 1;
+}
+
+h1::before {
+    content: "";
+    background-color: orangered;
+    position: absolute;
+    width: 170px;
+    height: 50px;
+    transform: skew(21deg, 10deg);
+    z-index: -1;
+}
+
+
+h1::after{
+     content: "";
+    background-color: orangered;
+    position: absolute;
+    width: 170px;
+    height: 50px;
+    transform: skew(-21deg, -10deg);
+    z-index: -1;
+}
+
+*/
+
+/* 2 */
+/*
+h1{
+    color: white;
+    background-color: rgb(41, 166, 216);
+    width: 150px;
+    height: 30px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding:10px;
+} 
+
+h1::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    background-color: white;
+    height: 50px;
+    left: -137px; 
+    top: -0.2px;
+    transform: skewX(25deg);
+    z-index: -1;
+}
+
+h1::after{
+    content: "";
+    position: absolute;
+    width: 13px;
+    background-color: rgb(41, 166, 216);
+    height: 50px;
+    left: -5px;
+    top: 0;
+    transform: skewX(25deg);
+}
+*/
+
+/* 4 */
+
+/*
+div{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: rgb(168, 159, 159);
+    border-bottom: 5px solid black;
+}
+
+div::before{
+    content: "Elzero";
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    color: white;
+    font-family: sans-serif;
+}
+
+div::after{
+    content: "";
+    position: absolute;
+    top: -71px;
+    left: 50%;
+    width: 137px;
+    height: 137px;
+    background-color: black;
+    border-bottom: 5px white solid;
+    border-right: 5px white solid;
+    transform: translateX(-50%) rotate(45deg);
+}
+*/
+
+/* 5 */
+
+
+div{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    transition: 1s;
+    transform-style: preserve-3d;
+    
+}
+
+div::after{
+    content: "Front";
+    position: absolute;
+    color: white;
+    background-color: palevioletred;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    transition: 1s;
+    backface-visibility: hidden;
+    z-index: 1;
+}
+
+div::before{
+    content: "Back";
+    position: absolute;
+    color: white;
+    background-color: aquamarine;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg);
+}
+
+div:hover,div::after{
+    transform: rotateY(-180deg);
+}

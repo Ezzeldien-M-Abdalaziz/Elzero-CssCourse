@@ -1,0 +1,105 @@
+
+
+
+.shape{
+    background-color: #eee;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -70%);
+}
+
+.shape > div{
+    width: 90%;
+    height: 90%;
+    background-color:rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:5%;
+    margin-top:5%;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.shape .x::after{
+    content: "X-Axis";
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    width: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.shape .x::before{
+    content: "";
+    position: absolute;
+    bottom: -21px;
+    height: 2px;
+    background-color: black;
+    width: 100%;
+}
+
+.shape .y::after{
+    content: "Y-Axis";
+    position: absolute;
+    left: -28px;
+    top: 50%;
+    transform: translateY( -50%);
+    background-color: #fff;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+}
+
+.shape .y::before{
+    content: "";
+    position: absolute;
+    left: -20px;
+    width: 2px;
+    height: 100%;
+    background-color: black;
+}
+
+
+.shape .z::after{
+    content: "Z-Axis";
+    position: absolute;
+    bottom: -124px;
+    left: -46%;
+    transform: rotate(-45deg);
+    background-color: #fff;
+    width: 56px;
+    text-align: center;
+    font-weight: bold;
+}
+.shape .z::before{
+    content: "";
+    position: absolute;
+    left: -36%;
+    width: 2px;
+    height: 100%;
+    bottom: -259px;
+    transform: rotate(45deg);
+    background-color: black;
+}
+
+.shape .origin{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+

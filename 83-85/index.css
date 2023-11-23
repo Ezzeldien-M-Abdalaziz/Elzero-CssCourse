@@ -1,0 +1,54 @@
+@media print{
+    .assign-one{
+        font-size: 40px;
+    }
+}
+
+/*2 */
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container div{
+    width: 100%;
+    background-color: #eee;
+    text-align: center;
+    margin: 10px;
+    padding: 10px 0 ;
+}
+
+p , h2{
+    margin: 0;
+}
+
+@media (max-width:991px)
+{
+
+}
+
+@media (min-width:992px) and (max-width:1199px)
+{
+    h2{
+        color: red;
+    }
+    .container div:not(:first-child)
+    {
+        width: calc((100% - 60px) / 3);
+    }
+}
+
+@media (min-width:1200px)
+{
+    h2{
+        color: skyblue;
+    }
+    .container div:nth-child(2) , .container div:nth-child(3)
+    {
+        width: calc((100% - 40px) / 2);
+    }
+
+}

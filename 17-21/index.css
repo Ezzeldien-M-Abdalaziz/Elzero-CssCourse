@@ -1,0 +1,52 @@
+h1{
+    text-shadow: 0.5px 0.5px red, 1px 1px blue;
+}
+
+.one{
+    text-transform: uppercase;
+}
+
+.two{
+    text-transform: capitalize;
+}
+
+.three{
+    text-transform: lowercase;
+}
+
+.o{
+    width: 400px;
+    background-color: red;
+    padding: 10px;
+
+}
+.t{
+    margin: 10px;
+    width: 400px;
+    background-color: red;
+    white-space: nowrap;
+    overflow: hidden;
+    word-break: break-all;
+    padding: 10px;
+}
+
+.th{
+    width: 400px;
+    padding: 10px;
+    background-color: red;
+    white-space: nowrap;
+    overflow: hidden;
+text-overflow: ellipsis;
+
+}
+
+a{
+    background-color: aquamarine;
+    padding: 10px 20px;
+    border-bottom: 5px solid blueviolet;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+   
+}

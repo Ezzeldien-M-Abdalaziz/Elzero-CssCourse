@@ -1,0 +1,267 @@
+
+/* 1 */
+/*
+div{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orangered;
+    background-color: #eee;
+    border-radius: 50%;
+    font-weight: bold;
+    box-shadow: 7px 0px orangered, -7px 0 rgb(70, 163, 199);
+}
+*/
+
+
+/* 2 */
+/*
+.parent{
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    justify-content:space-around;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #eee;
+    align-content: space-between;
+}
+
+.parent div{
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    width: calc(95% / 3);
+    padding:10px 0 ;
+}
+*/
+
+/* 3 */
+
+/*
+.parent{
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.parent div{
+    color: white;
+    background-color: rgb(130, 154, 199);
+    text-align: center;
+    flex-basis: calc(97% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px 0 ;
+}
+.one{
+    align-self: flex-end;
+    order:6;
+}
+
+.two{
+    order: 5;
+}
+
+.three{
+    align-self: flex-start;
+    order: 2;
+}
+
+.four{
+    order: 3;
+}
+
+.five{
+    order: 4;
+}
+*/
+
+/* 4 */
+
+/*
+.parent{
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.parent div{
+    background-color: rgb(28, 157, 125);
+    color: white;
+    text-align: center;
+    padding: 0 10px;
+    flex-basis: calc(97% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:bold ;
+}
+
+.one{
+    align-self: flex-end;
+}
+
+.three{
+    align-self: flex-end;
+}
+
+.two{
+    align-self: flex-start;
+    width: 50%;
+}
+*/
+
+/* 5 */
+
+/*
+.parent{
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.parent div{
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    flex-basis: calc(70% / 4);
+    height: 50%;
+}
+
+.one{
+    align-self: flex-start;
+    background-color: orangered;
+    order:2;
+}
+
+.two{
+    align-self: flex-end;
+    background-color: lawngreen;
+    order:3;
+}
+
+.three{
+    align-self: flex-start;
+    background-color: brown;
+    order:4;
+}
+
+.four{
+    align-self: flex-end;
+    background-color: violet;
+    order:1;
+}
+
+*/
+
+/* 6 */
+
+:root{
+
+    --background-color:#aaa;
+    --padding:10px;
+    --main-color:#dcdcdc;
+}
+
+body{
+    background-color: #eee;
+    font-family: sans-serif;
+
+}
+
+.page{
+    display: flex;
+    flex-flow: wrap;
+}
+
+.page .header{
+    width: 100%;
+    height: 20%;
+    margin: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo{
+    background-color: var(--main-color);
+    padding: 10px;
+    align-self: baseline;
+    flex-basis: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .links{
+    background-color: var(--main-color);
+    display:flex;
+    list-style: none;
+    flex-basis: 90%;
+    margin: 0;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links li{
+    margin-right:15px ;
+}
+
+
+.page .main-area{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+
+}
+
+.main-area .content{
+    flex-basis: 70%;
+    background-color: var(--main-color);
+    padding: 10px;
+}
+
+.main-area .sidebar
+{
+    flex-basis: 25%;
+    background-color: var(--main-color);
+    padding: 10px;
+}
+
+.page .footer{
+    width: 100%;
+    background-color: var(--main-color);
+    display: flex;
+    margin: 15px 10px;
+    padding: 15px;
+}
+.footer .design {
+    width: auto;
+    margin-left: auto;
+  }
+
+

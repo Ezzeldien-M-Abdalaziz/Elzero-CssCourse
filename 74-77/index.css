@@ -1,0 +1,307 @@
+
+/*
+div{
+width: 50px;
+height: 50px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50%);
+border: 5px solid orchid;
+border-left: 5px solid transparent;
+border-radius: 50%;
+animation-name: rotate;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+div::before{
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border: 5px solid skyblue;
+    border-right: 5px solid transparent;
+    border-radius: 50%;
+
+}
+div::after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border: 5px solid orange;
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+}
+
+div:hover{
+    animation-play-state: paused;
+}
+
+@keyframes rotate {
+    from{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    to{
+        transform:translate(-50%,-50%) rotate(360deg);
+    }
+}
+*/
+
+/* 2 */
+
+/*
+div{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border: 5px solid skyblue;
+    border-bottom: 5px solid transparent;
+    border-radius: 50%;
+    animation-name:rotate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    }
+
+    div::before{
+        content: "";
+        position: absolute;
+        width: 65px;
+        height: 65px;
+        top:50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        border: 5px solid orange;
+        border-bottom: 5px solid transparent;
+        border-radius: 50%;
+    
+    }
+    div::after{
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top:50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        border: 5px solid black;
+        border-bottom: 5px solid transparent;
+        border-radius: 50%;
+    }
+
+    div:hover::after{
+        border-bottom: 5px solid black;
+        border-right: 5px solid transparent;
+    }
+
+    div:hover::before{
+        border-bottom: 5px solid orange;
+        border-left: 5px solid transparent;
+    }
+    div:hover{
+        animation-duration: 1s;
+    }
+
+    @keyframes rotate {
+        from{
+            transform: translate(-50% , -50%) rotate(0);
+        }
+        to{
+            transform: translate(-50% , -50%) rotate(360deg);
+        }
+    }
+
+    */
+
+    /* 3 */
+    /*
+
+    span{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        background-color: #eee;
+        border-radius: 50%;
+        animation-name:round;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+        animation-direction: reverse;
+    }
+
+    span::before{
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 50%;
+        left: 50%;
+        border-radius:50%;
+        transform: translate(-50% , -50%);
+        border: 5px solid black;
+        border-right: 5px solid transparent;
+        
+    }
+
+    @keyframes round {
+        to{
+            transform: translate(-50% , -50%) rotate(360deg);
+        }
+    }
+
+    */
+
+    /* 4 **impotant */
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .e{
+        background-color: rgb(94, 89, 89);
+        width: 180px;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-120% , -50%);
+    }
+    
+    .e::before{
+        content: "";
+        position: absolute;
+        right: 5px;
+        top:10px;
+        background-color: white;
+        width: 70px;
+        height: 150px;
+        transform: rotate(90deg);
+    }
+
+    .e::after{
+        content: "";
+        position: absolute;
+        right: 5px;
+        bottom:10px;
+        background-color: white;
+        width: 70px;
+        height: 150px;
+        transform: rotate(90deg);
+    }
+    
+    span{
+        background-color: orangered;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        margin: 10px;
+    }
+
+    .box1{
+        transform: translateX(130px);
+        animation-name:move1 ;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-delay:2s
+    }
+
+    .l{
+        background-color: rgb(94, 89, 89);
+        width: 180px;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(20% , -50%);
+
+    }
+
+    .l::after{
+        content: "";
+        position: absolute;
+        left: 50px;
+        bottom: 50px;
+        background-color: white;
+        width: 180px;
+        height: 280px;
+    }
+
+.box2{
+    animation-name:move2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: translate(130px , 250px);
+    opacity: 0;
+}
+
+
+    @keyframes move1 {
+        0%{
+            transform: translateX(130px);
+        }
+        10%{
+            transform: translateX(0);
+        }
+        20%{
+            transform: translate(0,125px);
+        }
+        30%{
+        transform: translate(125px , 125px);
+        }
+        40%{
+            transform: translate(0 ,125px);
+        }
+        50%{
+            transform: translate(0,250px);
+        }
+        60%{
+            transform: translate(125px,250px);
+        }
+        70%{
+            transform: translate(0,250px);
+        }
+        90%{
+            transform: translate(0,0);
+        }
+        100%{
+            transform: translate(130px);
+            
+        }
+    }
+    
+
+
+    @keyframes move2 {
+        
+        30%{
+            opacity:1;
+        }
+        40%{
+            transform: translate(0px,250px);
+            opacity: 1;
+        }
+        60%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        100%{
+            transform: translate(0,0);
+            opacity:0;
+        }
+    }

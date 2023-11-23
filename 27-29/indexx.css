@@ -1,0 +1,84 @@
+
+.parent{
+    padding: 0;
+    margin: 0;
+    width: 800px;
+    overflow: auto;    /* important*/
+    background-color: #eee;
+}
+.full{
+    padding:15px 0 ;
+    background-color: red;
+    text-align: center;
+    font-weight: bold;
+    margin: 15px;
+    width: calc(100% - 30px);    /* full width except the margin from the left and right which is 30px*/
+
+    /*height: calc((100% - 45px) / 4);*/
+}
+
+.th{
+    padding:15px 0 ;
+    background-color: red;
+    text-align: center;
+    font-weight: bold;
+    float: left;
+    margin-left: 15px;
+    width: calc((100% - 60px) / 3);  /* third of full width except the margin from the left and right which is (3 elements * 30px) =  4 * 15 = 60px*/
+}
+
+.ha{
+    padding:15px 0 ;
+    background-color: red;
+    text-align: center;
+    font-weight: bold;
+    float: left;
+    margin-left: 15px;
+    margin-top:15px ;
+    width: calc((100% - 45px) / 2);
+}
+
+.qu{
+    padding:15px 0 ;
+    background-color: red;
+    text-align: center;
+    font-weight: bold;
+    float: left;
+    margin-left: 15px;
+    margin-bottom:15px ;
+    margin-top:15px ;
+    width: calc((100% - 75px) / 4);
+}
+
+.normal {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: rgb(191, 191, 191); /* Get The Background From Image */
+    color: black;
+  }
+
+  .one {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: rgb(191, 191, 191 , 30%); /* Get The Background From Image */
+    color: black;
+
+  }
+
+  .two {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: rgb(191, 191, 191); /* Get The Background From Image */
+    color: black;
+    opacity: 0.1;
+
+  }

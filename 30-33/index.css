@@ -1,0 +1,166 @@
+.parent{
+    position: relative;
+    
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.green{
+    background-color: green;
+    z-index: 3;
+    margin-left:30px;
+    margin-top: 30px;
+}
+.black{
+    background-color: black;
+    margin-left:20px;
+    margin-top: 30px;
+
+}
+.red{
+    background-color: red;
+    z-index: 4;
+    margin-left:40px;
+    margin-top: 40px;
+}
+.blue{
+    background-color: blue;
+    margin-left:20px;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+/**************************************************************************/
+
+.container{
+    width: 400px;
+    margin: 50px auto;
+    background-color: #eee;
+    border-width:1px ;
+    border-style: solid;
+    border-color: red blue;
+    text-align: center;
+    padding: 15px;
+    line-height: 27px;
+    position: relative;
+}
+
+span{
+    width: 30px;
+    height: 25px;
+    background-color: blue;
+    position: absolute;
+    color: white;
+
+}
+.top-left{
+    top: -10px;
+    left: -10px;
+    border-right: 1px solid red;
+}
+.bottom-left{
+    bottom: -10px;
+    left: -10px;
+    border-right: 1px solid red;
+
+}
+.top-right{
+    top: -10px;
+    right: -10px;
+    border-left: 1px solid red;
+
+}
+.bottom-right{
+    bottom: -10px;
+    right: -10px;
+    border-left: 1px solid red;
+
+}
+
+/**************************************************************************/
+
+.big{
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    list-style: none;
+    font-family: sans-serif;
+}
+.one{
+    background-color: #eee;
+  margin-bottom: 20px;
+  overflow: auto;
+  padding-left:10px ;
+}
+
+.two{
+    background-color: #eee;
+  margin-bottom: 20px;
+  overflow: auto;
+  padding-left:10px ;
+}
+
+.three{
+    background-color: #eee;
+  margin-bottom: 20px;
+  overflow: auto;
+  padding-left:10px ;
+}
+
+ol li{
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+.small li{
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    list-style-position: inside;
+}
+
+.two ol li{
+    list-style-type:upper-roman;
+}
+
+/**************************************************************************/
+
+h2{
+    font-weight: bold;
+    text-align: center;
+}
+
+table{
+    margin: 0 auto;
+    width: 700px;
+    border-bottom: 3px solid blueviolet;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: sans-serif;
+
+}
+td{
+    background-color: #eee;
+    padding: 30px;
+}
+
+thead td{
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    background-color:rgb(128, 128, 128);
+}
+
+button{
+    border: none;
+    background-color: rgba(0, 0, 255, 0.612);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+}
